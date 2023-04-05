@@ -6,25 +6,51 @@
 }
 
 @media screen and (min-width: 768px) and (max-width:992px) {
+
     body {
         background-image: linear-gradient(to top, var(--cor1), var(--cor2));
     }
 
     #login {
-        width: 80vw;
+        width: 70vw;
     }
 
     #foto {
-        float: left;
-        height: 100vh;
-        width: 30vw;
+        float: right;
+        width: 30%;
+        height: 100%;
     }
 
     #formulario {
-        float: right;
+        float: left;
+        width: 70%;
+        position: relative;
+        top: 50%;
+        transform: translate(0%, -50%);
     }
+
+    input[type=submit] {
+        margin-top: 20px;
+    }
+
 }
 
-@media screen and (min-width: 993px) and (max-width: 1200px) {
-    
+@media screen and (min-width: 993px) {
+
+    body {
+        background-image: linear-gradient(to top, var(--cor1), var(--cor2));
+    }
+
+   #login {
+        width: 50vw;
+   }
+
+   #foto {
+    height: 25vh;
+   }
+
+   input[type=submit] {
+    margin-top: 30px;
+}
+   
 }
